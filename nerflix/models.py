@@ -26,21 +26,3 @@ class Movie(models.Model):
 
     def __str__(self):
         return self.name
-
-
-# class Album(models.Model):
-#     name = models.CharField(max_length=144) 
-#     anio = models.PositiveIntegerField()
-#     # picture = models.ImageField(upload_to='album/', default='album/no-image.jpg')
-#     order = models.IntegerField()
-    
-
-# class Song(models.Model):
-#     name = models.CharField(max_length=144) 
-#     minutes = models.PositiveIntegerField()
-#     seconds = models.PositiveIntegerField()
-#     # track_number = models.PositiveIntegerField()
-#     album = models.ForeignKey(Album)
-
-#     def duration(self):
-#         return '%d:%d' % (self.minutes,self.seconds)
